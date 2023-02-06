@@ -1,0 +1,14 @@
+body {
+    background-color: black;
+}
+
+.center {
+    width: 1024px;
+    height: 768px;
+   
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    
+    margin: -384px -512px
+}
