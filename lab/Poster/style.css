@@ -1,0 +1,86 @@
+.center {
+    position: absolute;
+    left: 520px;
+    width: 35%;
+    top: 48px;
+    filter: drop-shadow(12px 36px 8px rgba(0, 0, 0, 0.42));
+  }
+
+.corn1 {
+    position: absolute;
+    left: 740px;
+    top: 680px;
+    width: 16%; 
+    filter: drop-shadow(12px 16px 8px rgba(0, 0, 0, 0.42));
+}
+
+.corn2 {
+    position: absolute;
+    left: 800px;
+    top: 620px;
+    width: 16%;
+    filter: drop-shadow(12px 16px 8px rgba(0, 0, 0, 0.42));
+}
+
+.text1 {
+    position: absolute;
+    left: 110px;
+    top: 250px;
+    font-size: 120px;
+    font-family: 'Ubuntu', sans-serif;
+    color: orange;
+}
+
+.text2 {
+    position: absolute;
+    left: 200px;
+    top: 560px;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    color: orange;
+}
+
+.text3 {
+    position: absolute;
+    left: 445px;
+    top: 650px;
+    font-size: 35px;
+    font-family: 'Ubuntu', sans-serif;
+    color: orange;
+}
+
+.kortext1 {
+    position: absolute;
+    left: 1000px;
+    top: 322px;
+    font-size:  25px;
+    font-family: "Hahmlet", serif;
+    color: orange;
+    transition: all 0.4s linear;
+}
+  
+.kortext2 {
+    position: absolute;
+    left: 880px;
+    top: 280px;
+    font-size: 19px;
+    font-family: "Hahmlet", serif;
+    color: orange;
+}
+
+.kortext3{
+    position: absolute;
+    left: 880px;
+    top: 340px;
+    font-size: 19px;
+    font-family: "Hahmlet", serif;
+    color: orange;
+}
+
+body {
+    height: 120vh;
+    margin: 0;
+    background: radial-gradient(#ffffff, #ffc062);
+    background-repeat: no-repeat;
+  }
+

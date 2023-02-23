@@ -1,0 +1,229 @@
+@font-face {
+    font-family: 'Labrada';
+    src: url(./font/Labrada.ttf) format('truetype');
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Labrada';
+}
+
+body{
+    background: linear-gradient(#0B8793 0%, #360033 100%);
+    height: 400vh;
+    font-size: 1vw;
+}
+
+section {
+    position: fixed;
+    width: 98vw;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section .star {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    animation: starAnimation 8s ease-in-out infinite,
+               backgoundMove 16s linear infinite;
+}
+
+section .star.star1 {
+    animation-delay: 0s;
+    background-image: url(./imgs/star1.png);
+}
+section .star.star2 {
+    animation-delay: -1s;
+    background-image: url(./imgs/star2.png);
+}
+section .star.star3 {
+    animation-delay: -2s;
+    background-image: url(./imgs/star3.png);
+}
+section .star.star4 {
+    animation-delay: -3s;
+    background-image: url(./imgs/star4.png);
+}
+section .star.star5 {
+    animation-delay: -4s;
+    background-image: url(./imgs/star5.png);
+}
+section .star.star6 {
+    animation-delay: -5s;
+    background-image: url(./imgs/star6.png);
+}
+section .star.star7 {
+    animation-delay: -6s;
+    background-image: url(./imgs/star7.png);
+}
+section .star.star8 {
+    animation-delay: -7s;
+    background-image: url(./imgs/star8.png);
+}
+
+@keyframes starAnimation {
+    0%, 20%, 40%, 60%, 80%, 100% {
+        opacity: 0;
+    }
+
+    10%, 30%, 50%, 70%, 90% {
+        opacity: 1;
+    }
+}
+
+@keyframes backgoundMove {
+    0% {
+        transform: scale(1);
+    }
+    100% {
+        transform: scale(2);
+    }
+}
+
+.container {
+    width: 98vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Page 1 */
+#container1 {
+    font-size: 5.5em;
+    font-weight: 700;
+    color: white;
+}
+
+#container1 > div {
+    text-align: center;
+    opacity: 1;
+    animation: fadeIn ease 10s;
+    -webkit-animation: fadeIn ease 8s;
+}
+
+@keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-moz-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-webkit-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-o-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+@-ms-keyframes fadeIn {
+  0% {opacity:0;}
+  100% {opacity:1;}
+}
+
+/* Page 2 */
+#container2 {
+    font-size: 3.5em;
+    font-weight: 700;
+    color: white;
+}
+
+#container2 > span {
+    display: inline-block;
+}
+
+/* Page 3 */
+#container3 {
+    flex-direction: column;
+    font-size: 3em;
+    font-weight: 700;
+    color: white;
+}
+
+#container3 > div {
+    text-align: center;
+}
+#container3 #highlight {
+    color: #D6D04E;
+}
+
+.slider{ 
+    position: relative;
+    width: 200px;
+    height: 200px;
+    transform-style: preserve-3d;
+    animation: rotate 45s linear infinite;
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*60deg)) translateZ(400px);
+}
+
+.slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img {
+    transform: translateY(-50px) scale(1.2);
+}
+
+@media screen and (max-width: 768px) {
+	.slider{ 
+        position: relative;
+        width: 30vw;
+        height: 30vw;
+        transform-style: preserve-3d;
+        animation: rotate 45s linear infinite;
+    }
+    
+    .slider span{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        transform-origin: center;
+        transform-style: preserve-3d;
+        transform: rotateY(calc(var(--i)*60deg)) translateZ(35vw);
+    }
+    
+}

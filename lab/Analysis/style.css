@@ -1,0 +1,22 @@
+html {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+body{
+    background-color: blanchedalmond;
+}
+
+h1 {
+    color: brown;
+    font-weight:bolder;
+}
+
+h2 {
+    color: black;
+    font-weight: 500;
+   } 
+
+ul {
+    font-size: larger; 
+}
+

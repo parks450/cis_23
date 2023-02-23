@@ -1,0 +1,182 @@
+@font-face {
+    font-family: 'Labrada';
+    font-style: normal;
+    font-weight: 300;
+    src: local('Labrada'), url('./font/Labrada-Light.ttf') format('truetype');
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    width: 100vw;
+    height: 100vh;
+}
+
+.bg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.bg.type-1 {
+    background-color: #905FD0;
+}
+
+.bg.type-2 {
+    background-color: #FFC166;
+}
+
+.bg.type-3 {
+    background-color: #3390E4;
+}
+
+.bg.type-4 {
+    background-color: #75AF52;
+}
+
+.bg.type-5 {
+    background-color: #EBE998;
+}
+
+.bg.type-6 {
+    background-color: #95D3D2;
+}
+
+.front, .back {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 57px;
+    height: 100vh;
+    white-space: nowrap;
+}
+
+.front.type-2 svg:first-child,.back.type-2 svg:first-child {
+    margin-right: 57px;
+}
+
+.front.type-3 svg:first-child,.back.type-3 svg:first-child,
+.front.type-3 svg:nth-child(2),.back.type-3 svg:nth-child(2) {
+    margin-right: 57px;
+}
+
+.front.type-4 svg:first-child,.back.type-4 svg:first-child {
+    transform: translateX(10px);
+}
+
+.front.type-6 svg:first-child,.back.type-6 svg:first-child {
+    transform: translateX(-25px);
+}
+
+.front.type-6 svg:nth-child(2),.back.type-6 svg:nth-child(2) {
+    transform: translateX(-25px);
+}
+
+.front.type-5, .back.type-5 {
+    left: 26px;
+}
+
+.front {
+    z-index: 2;
+}
+
+.front:hover + .back svg rect {
+    fill: pink;
+}
+
+.number a {
+    display: block;
+}
+
+.text {
+    position: relative;
+    font-family: 'Labrada';
+    color: #fff;
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: bold;
+    padding-top: 45px;
+    padding-bottom: 45px;
+    padding-right: 5%;
+}
+
+.text.type-1 {
+    padding-left: 319px;
+}
+
+.text.type-2 {
+    padding-left: 483px;
+}
+
+.text.type-3 {
+    padding-left: 703px;
+}
+
+.text.type-4 {
+    padding-left: 800px;
+}
+
+.text.type-5 {
+    padding-left: 624px;
+}
+
+.text.type-6 {
+    padding-left: 814px;
+}
+
+
+@media (max-width: 1050px) {
+    .back, .front {
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .back svg, .front svg {
+        height: 100vh;
+    }
+
+    .front.type-2 svg:first-child, .back.type-2 svg:first-child {
+        margin-right: -10px;
+    }
+
+    .front.type-4 svg:first-child,.back.type-4 svg:first-child {
+        transform: translateX(100px);
+    }
+
+    .front.type-3 svg:first-child, .back.type-3 svg:first-child,
+    .front.type-3 svg:nth-child(2), .back.type-3 svg:nth-child(2) {
+        margin-right: -10px;
+    }
+
+    .front.type-5, .back.type-5 {
+        left: 50%;
+    }
+
+    .front.type-6 svg:first-child,.back.type-6 svg:first-child {
+        transform: translateX(0);
+    }
+
+    .front.type-6 svg:nth-child(2),.back.type-6 svg:nth-child(2) {
+        transform: translateX(-130px);
+    }
+
+    .text {
+        display: flex;
+        width: 100%;
+        height: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0;
+        padding-bottom: 0;
+        padding-right: 0;
+        z-index: 1;
+    }
+
+    .text {
+        padding-left: 0 !important;
+    }
+}
