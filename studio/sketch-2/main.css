@@ -1,0 +1,80 @@
+/*
+  Coding from Life – Sketch 2: fluid layout
+
+  For sketch 2 you'll be positioning elements relative to a fluid container. This
+  means you'll need to use percentages when positioning and sizingelements within
+  your frame.
+*/
+
+
+body {
+  background-color: black;
+}
+
+.frame {
+  width: 95vw;
+  height: 57vw;
+  background: white;
+  margin: 2.5vw auto;
+  position: relative;
+}
+
+/* Your CSS goes here */
+
+.first-pumpkin {
+  background: #d65e09;
+  border-radius: 40% 60% 49% 51% / 61% 49% 51% 39% ;
+  width: 400px;
+  height: 400px;
+  position: absolute;
+  left: 25%;
+  bottom: 10%;
+  filter: drop-shadow(4px 12px 11px rgba(0, 0, 0, 0.47));
+  z-index: 1;
+}
+
+.first-pumpkin-top {
+  background: #d65e09;
+  border-radius: 60% 40% 54% 46% / 71% 60% 40% 29%; 
+  width: 120px;
+  height: 120px;
+  position: absolute;
+  left: 33%;
+  bottom: 50%;
+  z-index: 1;
+}
+
+.first-pumpkin-top2 {
+  background: #d9a027;
+  border-radius: 30% 70% 53% 47% / 71% 55% 45% 29%; 
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  left: 35%;
+  bottom: 61%;
+  z-index: 1;
+}
+
+.second-pumpkin {
+  background: #f7efad;
+  border-radius: 53% 47% 50% 50% / 63% 65% 35% 37% ; 
+  width: 150px;
+  height: 200px;
+  position: absolute;
+  left: 40%;
+  bottom: 55%;
+  transform: rotate(15deg);
+  filter: drop-shadow(3px 7px 11px rgba(0, 0, 0, 0.47));
+}
+
+.third-pumpkin {
+ background: #f7e2a3;
+  border-radius: 50%;
+  width: 300px;
+  height: 330px;
+  position: absolute;
+  left: 80%;
+  bottom: 45%;
+  transform: rotate(340deg);
+  filter: drop-shadow(-6px 12px 11px rgba(0, 0, 0, 0.47)); 
+}
