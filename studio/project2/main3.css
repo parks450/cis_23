@@ -45,9 +45,9 @@ body {
   .red .fruit, 
   .red .shadow   { animation-delay: -200ms; }
   .green .fruit,
-  .green .shadow { animation-delay: -100ms; animation-duration: 800ms }
+  .green .shadow { animation-delay: -100ms; animation-duration: 500ms }
   .blue .fruit ,
-  .blue .shadow  { animation-delay: 0;  animation-duration: 500ms }
+  .blue .shadow  { animation-delay: 0;  animation-duration: 800ms }
   
   @keyframes ball {
     0% {
