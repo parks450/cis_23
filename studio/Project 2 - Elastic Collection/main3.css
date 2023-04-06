@@ -1,0 +1,115 @@
+body {
+    background: #9AD3D7;
+    overflow: hidden;
+  }
+  
+  .wrap {
+    bottom: 100px;
+    margin-left: -50px;
+    position: absolute;
+    width: 100px;
+  }
+  
+  .red   { left: 25%; }
+  .green { left: 50%; }
+  .blue  { left: 75%; }
+  
+  .fruit,
+  .shadow {
+    border-radius: 100%;
+    left: 0;
+    margin: auto;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  .fruit {
+    animation: ball 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+    height: 50px;
+    width: 50px;
+  }
+  
+  /* .red .fruit   { background: linear-gradient(#e55, #b00); }
+  .green .fruit { background: linear-gradient(#5d5, #0a0); }
+  .blue .fruit  { background: linear-gradient(#59e, #04b); } */
+  
+  .shadow {
+    animation: shadow 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+    background: #000;
+    bottom: -90px;
+    height: 25px;
+    width: 75px;
+  }
+  
+  .red .fruit, 
+  .red .shadow   { animation-delay: -200ms; }
+  .green .fruit,
+  .green .shadow { animation-delay: -100ms; animation-duration: 800ms }
+  .blue .fruit ,
+  .blue .shadow  { animation-delay: 0;  animation-duration: 500ms }
+  
+  @keyframes ball {
+    0% {
+      transform: translateY( 0 );
+    }
+    100% {
+      transform: translateY( -150px );
+    }
+  }
+  
+  @keyframes shadow {
+    0% {
+      opacity: 0.2;
+      transform: scale( 0.75 );
+    }
+    100% {
+      opacity: 0.05;
+      transform: scale( 1 );
+    }
+  }
+  
+  .fruit{
+  
+  }
+  
+  .fruit_name {
+    margin-top: 120px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    z-index: -1;
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 15px;
+  }
+  
+  .title {
+    font-family: 'Josefin Sans', sans-serif;
+    font-size: 30px;
+    text-align: center;
+  }
+  
+  .fruit img{
+    height: 80%;
+  }
+  
+  #peach{
+  }
+  
+  #apricot{
+    height: 800%;
+    margin-left: -16.5rem;
+    margin-top: -14rem;
+  
+  }
+  
+  #koreanmelon{
+    height: 500%;
+    margin-left: -9.5rem;
+    margin-top: -8rem;
+  }
+  
+  li:not(:last-child) {
+    margin-bottom: 12px;
+  } 
+  
