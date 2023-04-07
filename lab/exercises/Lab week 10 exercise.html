@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Gruppo&family=Titan+One&display=swap" rel="stylesheet">
+  <title>Document</title>
+  <style>
+    body {
+      padding: 25px;
+      background-color: white;
+      color: black;
+      font-size: 25px;
+      text-align: center;
+    }
+    
+    .dark-mode {
+      background-color: black;
+      color: white;
+      font-family: 'Titan One', cursive;
+    }
+
+    .light-mode {
+      background-color: white;
+      color: white;
+      font-family: 'Gruppo', cursive;
+    }
+  </style>
+</head>
+<body id="body">
+  <h2>Exercise Dark/Light Mode</h2>
+
+  <button id="toggle-button" data-mode="light">Dark mode</button>
+  <button id="color-button" onclick="randomColor()">Random color</button>
+   
+  <script>
+    function toggleMode() {
+      var element = document.body;
+      element.classList.toggle("dark-mode");
+         
+      var button = document.getElementById("toggle-button");
+      if (element.classList.contains("dark-mode")) {
+        button.innerText = "Dark mode";
+        button.dataset.mode = "dark";
+      } 
+      else {
+        button.innerText = "Light mode";
+        button.dataset.mode = "light";
+      }
+    }
+
+    function randomColor() {
+      var randomColor = Math.floor(Math.random()*16777215).toString(16);
+      document.body.style.backgroundColor = "#" + randomColor;
+    }
+
+    var button = document.getElementById("toggle-button");
+    button.addEventListener("click", toggleMode);
+  </script>
+</body>
+</html>

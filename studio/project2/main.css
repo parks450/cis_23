@@ -14,14 +14,27 @@
     margin-top: 80px;
 }
 
-.calendar-row {
+.container{
+    display: flex;
+    align-items: center;
+    margin-left: 15%;
+    margin-right: 15%;
+}
+
+.calendar-box{
     display: flex;
     flex-flow: row;
-    align-items: center;
+    flex-wrap: wrap;
     justify-content: space-between;
     width: 90%;
-    margin-top: 50px;
+    margin: 10rem;
 }
+
+.calendar-box a img {
+    width: 15rem;
+    height: 15rem;
+}
+
 
 .bigger:hover {
     transform: scale(1.2);
@@ -32,4 +45,5 @@
     transform: scale(0.8);
     -webkit-transition: transform 0.4s ease-in-out;
 }
+
 
