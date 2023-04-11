@@ -1,0 +1,498 @@
+
+.fruit,
+.shadow {
+  border-radius: 100%;
+  left: 0;
+  margin: auto;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.fruit {
+  animation: ball 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+  height: 50px;
+  width: 50px;
+}
+
+/* .red .fruit   { background: linear-gradient(#e55, #b00); }
+.green .fruit { background: linear-gradient(#5d5, #0a0); }
+.blue .fruit  { background: linear-gradient(#59e, #04b); } */
+
+.shadow {
+  animation: shadow 300ms cubic-bezier(0.165, 0.840, 0.440, 1.000) infinite alternate;
+  background: #000;
+  bottom: -90px;
+  height: 25px;
+  width: 75px;
+}
+
+.wrap {
+  bottom: 100px;
+  margin-left: -50px;
+  position: absolute;
+  width: 100px;
+}
+
+@keyframes ball {
+  0% {
+    transform: translateY( 0 );
+  }
+  100% {
+    transform: translateY( -300px );
+  }
+}
+
+@keyframes shadow {
+  0% {
+    opacity: 0.2;
+    transform: scale( 0.75 );
+  }
+  100% {
+    opacity: 0.05;
+    transform: scale( 1 );
+  }
+}
+
+/* January */
+
+.straw { left:50%; }
+
+.straw .fruit, 
+.straw .shadow   { animation-delay: -200ms; animation-duration: 200ms;}
+
+#strawberry{
+  height: 30%;
+  margin-left: -18.5rem;
+  margin-top: -15rem;
+}
+
+/* February */
+
+.red   { left: 25%; }
+.green { left: 50%; }
+.blue  { left: 75%; }
+
+.red .fruit, 
+.red .shadow   { animation-delay: -200ms; animation-duration: 200ms;}
+.green .fruit,
+.green .shadow { animation-delay: -100ms; animation-duration: 800ms;}
+.blue .fruit,
+.blue .shadow  { animation-delay: 0;  animation-duration: 500ms;}
+
+#strawberry{
+  height: 70%;
+  margin-left: 0rem;
+  margin-top: 0rem;
+}
+
+#hallabong{
+  height: 900%;
+  margin-left: -10.5rem;
+  margin-top: -11rem;
+}
+
+#guava{
+  height: 500%;
+  margin-left: -9.5rem;
+  margin-top: -8rem;
+}
+
+/* March */
+
+.straw { left:50%; }
+
+.straw .fruit, 
+.straw .shadow   { animation-delay: -200ms; animation-duration: 200ms;}
+
+#strawberry{
+  height: 30%;
+  margin-left: -18.5rem;
+  margin-top: -15rem;
+}
+
+/* April */
+
+.left   { left: 33%; }
+.right { left: 66%; }
+
+.left .fruit, 
+.left .shadow   { animation-delay: -200ms; animation-duration: 200ms;}
+.right .fruit,
+.right .shadow { animation-delay: -100ms; animation-duration: 1200ms; }
+
+#strawberry{
+  height: 70%;
+  margin-left: 0rem;
+  margin-top: -11rem;
+}
+
+#papaya{
+  height: 1400%;
+  margin-left: -26.5rem;
+  margin-top: -23rem;
+}
+
+/* May */
+
+.one   { left: 25%; }
+.two { left: 50%; }
+.three  { left: 75%; }
+
+.one .fruit, 
+.one .shadow   { animation-delay: -200ms; animation-duration: 200ms;}
+.two .fruit,
+.two .shadow { animation-delay: -100ms; animation-duration: 1300ms;}
+.three .fruit,
+.three .shadow  { animation-delay: 0;  animation-duration: 400ms;}
+
+#strawberry{
+  height: 70%;
+  margin-left: 0rem;
+  margin-top: 0rem;
+}
+
+#pineapple{
+  height: 1300%;
+  margin-left: -27.5rem;
+  margin-top: -26rem;
+}
+
+#greenplum{
+  height: 500%;
+  margin-left: -10rem;
+  margin-top: -7rem;
+}
+
+/* June */
+
+.yellow   { left: 33%; }
+.darkred { left: 66%; }
+
+.yellow .fruit, 
+.yellow .shadow   { animation-delay: -200ms; animation-duration: 700ms;}
+.darkred .fruit,
+.darkred .shadow { animation-delay: -100ms; animation-duration: 150ms; }
+
+#banana{
+  height: 650%;
+  margin-left: -13rem;
+  margin-top: -10rem;
+}
+
+#cherry{
+  height: 300%;
+  margin-left: -5rem;
+  margin-top: -3rem;
+}
+
+/* July */
+
+.peach { left: 20%; }
+.apricot { left: 40%; }
+.koreanmelon { left: 60%; }
+.applemango { left: 80%; }
+
+.peach.fruit, 
+.peach .shadow   { animation-delay: -200ms; animation-duration: 400ms;}
+.apricot .fruit,
+.apricot .shadow { animation-delay: -100ms; animation-duration: 500ms;}
+.koreanmelon .fruit,
+.koreanmelon .shadow  { animation-delay: 0;  animation-duration: 600ms;}
+.applemango .fruit,
+.applemango .shadow  { animation-delay: 0;  animation-duration: 700ms;}
+
+#peach{
+  height: 140%;
+  margin-left: -0.5rem;
+  margin-top: -1rem;
+}
+
+#apricot{
+  height: 550%;
+  margin-left: -11rem;
+  margin-top: -8rem;
+}
+
+#koreanmelon{
+  height: 700%;
+  margin-left: -14rem;
+  margin-top: -9rem;
+}
+
+#applemango{
+  height: 280%;
+  margin-left: -3rem;
+  margin-top: -5rem;
+}
+
+/* August */
+
+.peach { left: 20%; }
+.watermelon { left: 40%; }
+.plum { left: 60%; }
+.passionfruit { left: 80%; }
+
+.peach.fruit, 
+.peach .shadow   { animation-delay: -100ms; animation-duration: 400ms;}
+.watermelon .fruit,
+.watermelon .shadow { animation-delay: -100ms; animation-duration: 1800ms;}
+.plum .fruit,
+.plum .shadow  { animation-delay: 0;  animation-duration: 400ms;}
+.passionfruit .fruit,
+.passionfruit .shadow  { animation-delay: 0;  animation-duration: 400ms;}
+
+#peach{
+  height: 140%;
+  margin-left: -0.5rem;
+  margin-top: -1rem;
+}
+
+#watermelon{
+  height: 1100%;
+  margin-left: -21.5rem;
+  margin-top: -23rem;
+}
+
+#plum{
+  height: 300%;
+  margin-left: -5rem;
+  margin-top: -4rem;
+}
+
+#passionfruit{
+  height: 600%;
+  margin-left: -12rem;
+  margin-top: -10rem;
+}
+
+/* Button */
+
+.container {
+  position: fixed;
+  top: 25px;
+  right: 80px;
+  z-index: 9999;
+}
+
+.btn {
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: transparent;
+  border: none;
+  text-align: center;
+  color: #fff;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+}
+
+.btn img {
+  display: block;
+  width: 90px;
+  height: 80px;
+  margin: auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+li:not(:last-child) {
+  margin-bottom: 12px;
+} 
+
+.fruit_name {
+  /* margin-top: 120px;
+  position: absolute; */
+  left: 0px;
+  /* top: 0px; */
+  z-index: -1;
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 200;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  align-content: space-around;
+  /* margin-top: 0rem; */
+  gap: 4px;
+
+}
+
+.title h1 {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 300;
+  font-size: 50px;
+  text-align: center;
+}
+
+li:not(:last-child) {
+  margin-bottom: 10px;
+} 
+
+.fruit_name {
+  list-style-type: none;
+}
+
+.fruit-info {
+  display: none;
+  position: absolute;
+  z-index: 1;
+}
+
+.fruit_name li:hover .fruit-info {
+  display: block;
+}
+
+li:hover {
+  font-family: 'Josefin Sans', sans-serif;
+  font-weight: 400;
+}
+
+.fruit_name li:nth-child(1) .fruit-info {
+  top: 112px;
+  left: 100px;
+  color: #ffd5a6;
+}
+
+.fruit_name li:nth-child(2) .fruit-info {
+  top: 141px;
+  left: 90px;
+  color: red;
+}
+
+.fruit_name li:nth-child(3) .fruit-info {
+  top: 171px;
+  left: 140px;
+  color: #fcc668;
+}
+
+.fruit_name li:nth-child(4) .fruit-info {
+  top: 200px;
+  left: 100px;
+  color: yellow;
+}
+.fruit_name li:nth-child(5) .fruit-info {
+  top: 229px;
+  left: 100px;
+  color: #ab1107;
+}
+.fruit_name li:nth-child(6) .fruit-info {
+  top: 259px;
+  left: 130px;
+  color: #2a9918;
+}
+.fruit_name li:nth-child(7) .fruit-info {
+  top: 289px;
+  left: 100px;
+  color: #2a9918;
+}
+.fruit_name li:nth-child(8) .fruit-info {
+  top: 319px;
+  left: 125px;
+  color: #e87510;
+}
+.fruit_name li:nth-child(9) .fruit-info {
+  top: 348px;
+  left: 90px;
+  color: #ab1107;
+}
+.fruit_name li:nth-child(10) .fruit-info {
+  top: 377px;
+  left: 145px;
+  color: yellow;
+}
+.fruit_name li:nth-child(11) .fruit-info {
+  top: 406px;
+  left: 95px;
+  color: #57c94b;
+}
+.fruit_name li:nth-child(12) .fruit-info {
+  top: 436px;
+  left: 105px;
+  color:#fcc668;
+}
+.fruit_name li:nth-child(13) .fruit-info {
+  top: 466px;
+  left: 140px;
+  color: #4c0f61;
+}
+.fruit_name li:nth-child(14) .fruit-info {
+  top: 495px;
+  left: 95px;
+  color: #fcc2bb;
+}
+.fruit_name li:nth-child(15) .fruit-info {
+  top: 525px;
+  left: 125px;
+  color: #e8591c;
+}
+.fruit_name li:nth-child(16) .fruit-info {
+  top: 554px;
+  left: 85px;
+  color: #d1a875;
+}
+.fruit_name li:nth-child(17) .fruit-info {
+  top: 584px;
+  left: 120px;
+  color: yellow;
+}
+.fruit_name li:nth-child(18) .fruit-info {
+  top: 613px;
+  left: 85px;
+  color: #4c0f61;
+}
+.fruit_name li:nth-child(19) .fruit-info {
+  top: 643px;
+  left: 140px;
+  color: red;
+}
+.fruit_name li:nth-child(20) .fruit-info {
+  top: 672px;
+  left: 110px;
+  color: #7d6951;
+}
+.fruit_name li:nth-child(21) .fruit-info {
+  top: 702px;
+  left: 145px;
+  color: #57c94b;
+}
+.fruit_name li:nth-child(22) .fruit-info {
+  top: 732px;
+  left: 155px;
+  color: #e8591c;
+}
+.fruit_name li:nth-child(23) .fruit-info {
+  top: 761px;
+  left: 130px;
+  color: red;
+}
+.fruit_name li:nth-child(24) .fruit-info {
+  top: 790px;
+  left: 120px;
+  color: #e87510;
+}
+.fruit_name li:nth-child(25) .fruit-info {
+  top: 820px;
+  left: 195px;
+  color: #2a9918;
+}
+

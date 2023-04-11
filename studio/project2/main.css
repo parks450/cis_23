@@ -4,21 +4,22 @@
     display: flex;
     flex-flow: column;
     align-items: center;
-    margin-top: 30px;
+    margin-top: 0px;
 }
 
 .title {
-    font-size: 30px;
+    font-size: 70px;
     font-weight: bold;
     font-family: 'Josefin Sans';
-    margin-top: 80px;
+    margin-top: 140px;
+    color: purple;
 }
 
 .container{
     display: flex;
     align-items: center;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin-left: 2rem;
+    margin-right: 2rem;
 }
 
 .calendar-box{
@@ -27,23 +28,42 @@
     flex-wrap: wrap;
     justify-content: space-between;
     width: 90%;
-    margin: 10rem;
+    margin: 6rem;
 }
 
 .calendar-box a img {
-    width: 15rem;
-    height: 15rem;
+    width: 13rem;
+    height: 13rem;
+    padding: 1rem;
 }
 
 
 .bigger:hover {
     transform: scale(1.2);
-    -webkit-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.6s ease-in-out;
+}
+
+.biggest:hover { 
+    transform: scale(1.6);
+    -webkit-transition: transform 0.6s ease-in-out;
 }
 
 .smaller:hover {
     transform: scale(0.8);
-    -webkit-transition: transform 0.4s ease-in-out;
+    -webkit-transition: transform 0.6s ease-in-out;
+}
+
+.smallest:hover {
+    transform: scale(0.6);
+    -webkit-transition: transform 0.6s ease-in-out;
 }
 
 
+
+body {
+    background-image: url("imgs/background.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+  }
+  
