@@ -1,0 +1,31 @@
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+/* mouse over link */
+a:hover {
+    color: plum;
+  }
+
+h1{
+    font-family: 'Ysabeau', sans-serif;
+    color: green;
+    font-size: 40px;
+}
+
+h2{
+    font-family: 'Ysabeau', sans-serif;
+    font-size: 20px;
+    color: #5fba4c
+}
+
+.text{
+    font-family: 'Ysabeau', sans-serif;
+    font-style: italic;
+}
+
+body{
+    margin-left: 50px;
+    margin-top: 50px;
+}

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>OuLiPo x William Carlos William's This Is Just To Say</title>
+    <meta name="description" content="OuLiPo x William Carlos William's This Is Just To Say">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&display=swap" rel="stylesheet">
+    <script>
+        function refreshPage(){
+            window.location.reload();
+        }   
+        
+        let pastVerbs = ['slept', 'laughed', 'cried', 'smiled', 'sighed'];
+        let pastVerb = pastVerbs[Math.floor(Math.random() * pastVerbs.length)];
+
+        let nouns = ['chair', 'flower', 'book', 'cup', 'table'];
+        let noun1 = nouns[Math.floor(Math.random() * nouns.length)];
+        let noun2 = nouns[Math.floor(Math.random() * nouns.length)];
+        let noun3 = nouns[Math.floor(Math.random() * nouns.length)];
+
+        let adjectives = ['bright', 'calm', 'happy', 'silly', 'wild'];
+        let adj1 = adjectives[Math.floor(Math.random() * adjectives.length)];
+        let adj2 = adjectives[Math.floor(Math.random() * adjectives.length)];
+        let adj3 = adjectives[Math.floor(Math.random() * adjectives.length)];
+
+        var poem = `
+            I have ${pastVerb}
+            the ${noun1}
+            that were in
+            the ${noun2}
+
+            and which
+            you were probably
+            saving
+            for the ${noun3}
+
+            Forgive me
+            they were ${adj1}
+            so ${adj2}
+            and so ${adj3}
+            `;
+
+            console.log(poem);
+            document.write(poem);
+
+            const poemOriginal = `
+            I have eaten
+            the plums
+            that were in
+            the icebox
+
+            and which
+            you were probably
+            saving
+            for breakfast
+
+            Forgive me
+            they were delicious
+            so sweet
+            and so cold
+            `;
+        </script>
+  </head>
+  <body>
+    <div class="container">
+    <br><br><button type = "submit" onclick = "refreshPage()">Give me another one</button>
+    </div>
+</body>
+</html>

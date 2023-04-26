@@ -1,0 +1,15 @@
+body {
+    text-align: center;
+    margin-top: 330px;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 15px;
+    text-decoration:underline;
+    background-color:bisque;
+}
+
+button {
+    background-color: #fcba03;
+    font-family: 'Castoro Titling', cursive;
+    font-size: 12px;
+  }
+  
