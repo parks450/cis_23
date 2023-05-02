@@ -1,0 +1,19 @@
+h1 {font-family: 'Husky Stash', sans-serif;                                             
+    color: #e2eb36;
+    font-size: 100px;}
+
+h3 {font-family: 'Ubuntu Mono', monospace;
+    color: white;
+    font-size: 30px;}
+
+P {font-family: 'Ubuntu Mono', monospace;
+   color: white;
+   font-size: 20px;}
+
+body {background-color: black;
+      text-align: center; }
+
+
+.container2 {padding: 50px;}
+
+.container3 {padding: 50px;}
