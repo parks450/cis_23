@@ -1,0 +1,503 @@
+body {
+    background-color: #FFFAED;
+    overflow-x: hidden;
+}
+
+h1 {
+    position: relative;
+    font-family: 'Anek Devanagari', sans-serif;
+    left: 15px;
+    font-size: 40px;
+}
+
+p {
+    position: relative;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    left: 1135px;
+    top: 705px; 
+}
+
+
+.borough {
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    top: 140px;
+    left: 1050px;
+}
+
+.gap1,.gap2, .gap3, .gap4, .gap5 {
+    margin-bottom: 20px;
+    margin-left: -20px;
+    
+}
+
+.gap1{
+    width: 4rem;
+}
+.gap2{
+    width: 3.5rem;
+    margin-top: 24px;
+    margin-left: -20px;
+}
+.gap3{
+    width: 4.5rem;
+    margin-top: 30px;
+    margin-left: -30px;
+}
+.gap4{
+    width: 4.5rem; 
+    margin-left: -30px;
+    margin-top: 30px;
+}
+.gap5 {
+    width: 5.5rem;
+    margin-left: -40px;
+    margin-top: 34px;
+}
+
+.breed {
+    display: grid;
+    align-content: center;
+    position: absolute;
+    left: 40px;
+    top: 90px;
+}
+
+.pitbull {
+    position: relative;
+    top: -10px; 
+    left: 590px;
+}
+
+.german {
+    position: relative;
+    left: 430px;
+    top: -15px;
+}
+
+.shihtzu {
+    position: relative;
+    top: 32px;
+    left: 340px;  
+}
+
+.labrador {
+    position: relative;
+    top: 120px;
+    left: 290px;
+}
+
+.chihuahua {
+    position: relative;
+    top: 207px;
+    left: 351px;
+}
+
+.yorkie {
+    position: relative;
+    top: 274px;
+    left: 440px;
+}
+
+.maltese {
+    position: relative;
+    top: 284px;
+    left: 587px;
+}
+
+.guide {
+    position: relative;
+    top: 25px; 
+    left: 350px;
+}
+
+.ranking {
+    position: relative;
+    top: 690px;
+    left: 1135px;
+}
+
+nav {
+    display: grid;
+    position: absolute;
+    justify-content: center;
+    gap: 1rem;
+    left: 20px;
+    top: 330px;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-weight: 600;
+    font-size: 18px;
+}
+
+a {
+    color: black;
+    text-decoration: none;  
+    text-decoration-line: underline;  
+    text-underline-offset: 8px;
+}
+
+a:hover {
+    color: #FF0505; 
+    text-decoration:none; 
+    cursor:pointer;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.mapping{
+    width: 100vw;
+}
+
+.lines1{
+    position: absolute;
+    display: none;
+    width: 44%;
+    left: 380px;
+    top: 557.5px;
+    z-index: 0;
+}
+
+.gap1:hover ~ .lines1{
+    display: block;
+    margin-left: -1000px;
+    margin-top: -600px;
+    height: auto;
+}    
+
+.lines2{
+    position: absolute;
+    display: none;
+    width: 45.5%;
+    left: 349px;
+    top: 560px;
+}
+
+.gap2:hover ~ .lines2{
+    display: block;
+    margin-left: -1000px;
+    margin-top: -600px;
+    height: auto;
+    
+}
+
+.lines3{
+    position: absolute;
+    display: none;
+    width: 44.2%;
+    left: 378px;
+    top: 557px;
+}
+
+
+.gap3:hover ~ .lines3{
+    display: block;
+    margin-left: -1000px;
+    margin-top: -600px;
+    height: auto;
+    
+}
+
+.lines4{
+    position: absolute;
+    display: none;
+    width: 44.4%;
+    left: 377px;
+    top: 559.5px;
+}
+
+
+.gap4:hover ~ .lines4{
+    display: block;
+    margin-left: -998.2px;
+    margin-top: -600px;
+    height: auto; 
+}
+
+.lines5{
+    position: absolute;
+    display: none;
+    width: 45.8%;
+    left: 350px;
+    top: 560px;
+}
+
+
+.gap5:hover ~ .lines5{
+    display: block;
+    margin-left: -998.2px;
+    margin-top: -600px;
+    height: auto; 
+}
+
+/* number info */
+
+h2 {
+    position: relative;
+    font-family: 'Anek Devanagari', sans-serif;
+    font-size: 14px;  
+    font-weight: 600; 
+}
+.text1 {
+    display: none;
+    position: absolute;
+}
+
+.text2 {
+    display: none;
+    position: absolute;
+    margin-top: -160px;
+}
+
+.text3 {
+    display: none;
+    position: absolute;
+    margin-top: -300px;
+}
+
+.text4 {
+    display: none;
+    position: absolute;
+    margin-top: -428px;
+}
+
+.text5 {
+    display: none;
+    position: absolute;
+    margin-top: -572px;
+}
+
+.first-text {
+    top: -90px;
+    left: -418px;
+}
+
+.second-text {
+    top: -50px;
+    left: -575px;
+}
+
+.third-text {
+    top: 27px;
+    left: -672px;
+}
+
+.fourth-text {
+    top: 155px;
+    left: -704px;
+}
+
+.fifth-text {
+    top: 270px;
+    left: -672px;
+}
+
+.sixth-text {
+    top: 362px;
+    left: -570px;
+}
+
+.seventh-text {
+    top: 404px;
+    left: -428px;
+}
+
+.gap1:hover ~ .text1 {
+    display: block;
+}
+
+.gap2:hover ~ .text2 {
+    display: block;
+}
+
+.gap3:hover ~ .text3 {
+    display: block;
+}
+
+.gap4:hover ~ .text4 {
+    display: block;
+}
+
+.gap5:hover ~ .text5 {
+    display: block;
+}
+
+
+/* Dog bite total numbers */
+
+.totalnumber1 {
+    display: none;
+    position: absolute;
+    top: -288px;
+    left: 576px;
+    width: 110%;
+}
+
+.number1:hover ~ .totalnumber1 {
+    display: block;
+}
+
+.totalnumber2 {
+    display: none;
+    position: absolute;
+    top: -217px;
+    left: 420px;
+    width: 108%;
+}
+
+.number2:hover ~ .totalnumber2 {
+    display: block;
+}
+
+.totalnumber3 {
+    display: none;
+    position: absolute;
+    top: -90px;
+    left: 322px;
+    width: 108%;
+}
+
+.number3:hover ~ .totalnumber3 {
+    display: block;
+}
+
+.totalnumber4 {
+    display: none;
+    position: absolute;
+    top: 65px;
+    left: 282px;
+    width: 100%;
+}
+
+.number4:hover ~ .totalnumber4 {
+    display: block;
+}
+
+.totalnumber5 {
+    display: none;
+    position: absolute;
+    top: 235px;
+    left: 327px;
+    width: 100%;
+}
+
+.number5:hover ~ .totalnumber5 {
+    display: block;
+}
+
+.totalnumber6 {
+    display: none;
+    position: absolute;
+    top: 358px;
+    left: 428px;
+    width: 100%;
+}
+
+.number6:hover ~ .totalnumber6 {
+    display: block;
+}
+
+.totalnumber7 {
+    display: none;
+    position: absolute;
+    top: 428px;
+    left: 572px;
+    width: 100%;
+}
+
+.number7:hover ~ .totalnumber7 {
+    display: block;
+}
+
+/* Dog line */
+
+.dogline1 {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 600px;
+    width: 400%;
+}
+
+.pitbull:hover ~ .dogline1{
+    display: block;
+}
+
+.dogline2 {
+    display: none;
+    position: absolute;
+    top: 100px;
+    left: 500px;
+    width: 500%;
+}
+
+.german:hover ~ .dogline2{
+    display: block;
+}
+
+.dogline3 {
+    display: none;
+    position: absolute;
+    top: 110px;
+    left: 390px;
+    width: 600%;
+}
+
+.shihtzu:hover ~ .dogline3{
+    display: block;
+}
+
+.dogline4 {
+    display: none;
+    position: absolute;
+    top: 260px;
+    left: 370px;
+    width: 600%;
+}
+
+.labrador:hover ~ .dogline4{
+    display: block;
+}
+
+
+.dogline5 {
+    display: none;
+    position: absolute;
+    top: 120px;
+    left: 390px;
+    width: 600%;
+}
+
+.chihuahua:hover ~ .dogline5{
+    display: block;
+}
+
+
+.dogline6 {
+    display: none;
+    position: absolute;
+    top: 125px;
+    left: 480px;
+    width: 500%;
+}
+
+.yorkie:hover ~ .dogline6{
+    display: block;
+}
+
+.dogline7 {
+    display: none;
+    position: absolute;
+    top: 90px;
+    left: 590px;
+    width: 410%;
+}
+
+.maltese:hover ~ .dogline7{
+    display: block;
+}
+
+
+
